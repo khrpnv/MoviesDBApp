@@ -17,6 +17,8 @@
 		3F8FCE0C2315526500D814F5 /* ListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8FCE0B2315526500D814F5 /* ListType.swift */; };
 		3FC642832317AF380003D3C7 /* MoviesControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC642822317AF380003D3C7 /* MoviesControllerDelegate.swift */; };
 		973449130AB4B9A2CCA90EDC /* Pods_MoviesDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCE745FE95A40F2D5BA5BEC /* Pods_MoviesDB.framework */; };
+		EA0E1531234E688400D1353B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E1530234E688400D1353B /* DataManager.swift */; };
+		EA0E1533234E68EF00D1353B /* FavouritesControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E1532234E68EF00D1353B /* FavouritesControllerDelegate.swift */; };
 		EA57A820234D18C000A9FD73 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA57A81F234D18C000A9FD73 /* Genre.swift */; };
 		EA57A822234D18F400A9FD73 /* TrailerControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA57A821234D18F400A9FD73 /* TrailerControllerDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +37,8 @@
 		3FC642822317AF380003D3C7 /* MoviesControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesControllerDelegate.swift; sourceTree = "<group>"; };
 		8524E5775099C31B15DC58B8 /* Pods-MoviesDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesDB.release.xcconfig"; path = "Target Support Files/Pods-MoviesDB/Pods-MoviesDB.release.xcconfig"; sourceTree = "<group>"; };
 		BFE31787B8840BE730B01FDE /* Pods-MoviesDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesDB.debug.xcconfig"; path = "Target Support Files/Pods-MoviesDB/Pods-MoviesDB.debug.xcconfig"; sourceTree = "<group>"; };
+		EA0E1530234E688400D1353B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		EA0E1532234E68EF00D1353B /* FavouritesControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesControllerDelegate.swift; sourceTree = "<group>"; };
 		EA57A81F234D18C000A9FD73 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		EA57A821234D18F400A9FD73 /* TrailerControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerControllerDelegate.swift; sourceTree = "<group>"; };
 		EFCE745FE95A40F2D5BA5BEC /* Pods_MoviesDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviesDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +119,7 @@
 				3F8FCDFE23154CA900D814F5 /* NetworkManager.swift */,
 				3F8FCE0B2315526500D814F5 /* ListType.swift */,
 				EA57A81F234D18C000A9FD73 /* Genre.swift */,
+				EA0E1530234E688400D1353B /* DataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 				3F8FCE0423154E6C00D814F5 /* SplashScreenDelegate.swift */,
 				3FC642822317AF380003D3C7 /* MoviesControllerDelegate.swift */,
 				EA57A821234D18F400A9FD73 /* TrailerControllerDelegate.swift */,
+				EA0E1532234E68EF00D1353B /* FavouritesControllerDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -267,7 +273,9 @@
 				3F8FCE0C2315526500D814F5 /* ListType.swift in Sources */,
 				EA57A822234D18F400A9FD73 /* TrailerControllerDelegate.swift in Sources */,
 				3FC642832317AF380003D3C7 /* MoviesControllerDelegate.swift in Sources */,
+				EA0E1533234E68EF00D1353B /* FavouritesControllerDelegate.swift in Sources */,
 				3F87D1B8230FF36D0093D8ED /* Film.swift in Sources */,
+				EA0E1531234E688400D1353B /* DataManager.swift in Sources */,
 				EA57A820234D18C000A9FD73 /* Genre.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
