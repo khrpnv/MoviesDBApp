@@ -10,6 +10,8 @@ import UIKit
 
 class SplashViewController: UIViewController {
   
+  private var downloadedLists: Int = 0
+
   override func viewDidLoad() {
     super.viewDidLoad()
     let networkManager = NetworkManager()
@@ -27,7 +29,8 @@ extension SplashViewController: SplashScreenDelegate{
   
   func didFinishDownloadingData(array: [Film], list: ListType) {
     DataManager.instance.setDataArray(array: array, isInitial: true, list: list)
-    if list == .upcoming{
+    downloadedLists += 1
+    if downloadedLists == 3{
       self.dismiss(animated: true, completion: nil)
       self.present(TabBarViewController(), animated: true, completion: nil)
     }
