@@ -2,7 +2,7 @@
 //  TrailerControllerDelegate.swift
 //  MoviesDB
 //
-//  Created by Илья on 10/8/19.
+//  Created by student on 8/29/19.
 //  Copyright © 2019 student. All rights reserved.
 //
 
