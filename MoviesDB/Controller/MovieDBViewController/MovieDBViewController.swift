@@ -180,6 +180,9 @@ extension MovieDBViewController: UITableViewDelegate, UITableViewDataSource{
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let film = getFilm(for: indexPath)
+    let detailsVC = DetailsViewController(nibName: "DetailsViewController", bundle: nil)
+    detailsVC.film = film
+    self.navigationController?.pushViewController(detailsVC, animated: true)
   }
   
   func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
