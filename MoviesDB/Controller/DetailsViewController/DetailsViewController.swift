@@ -32,6 +32,7 @@ class DetailsViewController: UIViewController {
     super.viewDidLoad()
     styleUI()
     getFilmData()
+    setTapGestureToPosterView()
   }
   
   override func viewWillDisappear(_ animated: Bool) {
@@ -71,6 +72,33 @@ class DetailsViewController: UIViewController {
     return String(genresString.dropLast())
   }
   
+  private func transformPosterView(){
+    UIView.animate(withDuration: 1) {
+      if self.isScaled{
+        self.isScaled = false
+        self.ibFilmPosterView.transform = CGAffineTransform.identity
+        self.ibFilmPosterView.center = self.startPosterPosition!
+        self.ibBlurView.backgroundColor = .clear
+        self.tabBarController?.tabBar.isHidden = false
+      } else {
+        self.isScaled = true
+        self.ibBlurView.backgroundColor = .black
+        self.ibBlurView.alpha = 0.9
+        self.startPosterPosition = self.ibFilmPosterView.center
+        self.ibFilmPosterView.transform = CGAffineTransform(scaleX: 2.5, y: 2.5)
+        self.ibFilmPosterView.center.x = self.view.center.x
+        self.ibFilmPosterView.center.y = self.view.frame.height / 2
+        self.tabBarController?.tabBar.isHidden = true
+      }
+    }
+  }
+  
+  private func setTapGestureToPosterView(){
+    let tap = UITapGestureRecognizer(target: self, action: #selector(tapActionHandler))
+    ibFilmPosterView.addGestureRecognizer(tap)
+    ibFilmPosterView.isUserInteractionEnabled = true
+  }
+  
   //MARK: - Action handlers
   @IBAction func watchTrailerPressed(_ sender: Any) {
     // TODO:
@@ -80,7 +108,7 @@ class DetailsViewController: UIViewController {
 //MARK: - Tap Gesture Handler
 extension DetailsViewController{
   @objc func tapActionHandler(){
-    // TODO:
+    transformPosterView()
   }
 }
 
