@@ -8,5 +8,6 @@
 
 import Foundation
 protocol TrailerControllerDelegate: class {
-    func didFinishGettingVideoKey(key: String)
+  func didFinishGettingVideoKey(key: String)
+  func trailerIsNotAvailable()
 }

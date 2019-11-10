@@ -50,9 +50,9 @@ class DetailsViewController: UIViewController {
     ibLabelParentView.layer.borderWidth = 1
     ibLabelParentView.layer.borderColor = UIColor(red: 251/255, green: 140/255, blue: 0, alpha: 1).cgColor
     ibBlurView.backgroundColor = .clear
-    if getFilmGenreName().count == 0{
-      ibTrailerButton.isHidden = true
-    }
+//    if getFilmGenreName().count == 0 {
+//      ibTrailerButton.isHidden = true
+//    }
   }
   
   private func getFilmData(){
@@ -113,7 +113,9 @@ class DetailsViewController: UIViewController {
   
   //MARK: - Action handlers
   @IBAction func watchTrailerPressed(_ sender: Any) {
-    // TODO:
+    let trailerVC = TrailerViewController(nibName: "TrailerViewController", bundle: nil)
+    trailerVC.film = film
+    self.navigationController?.pushViewController(trailerVC, animated: true)
   }
 }
 
