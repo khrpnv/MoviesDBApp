@@ -33,6 +33,7 @@ class DetailsViewController: UIViewController {
     styleUI()
     getFilmData()
     setTapGestureToPosterView()
+    addButtonToNavigationBar()
   }
   
   override func viewWillDisappear(_ animated: Bool) {
@@ -97,6 +98,17 @@ class DetailsViewController: UIViewController {
     let tap = UITapGestureRecognizer(target: self, action: #selector(tapActionHandler))
     ibFilmPosterView.addGestureRecognizer(tap)
     ibFilmPosterView.isUserInteractionEnabled = true
+  }
+  
+  private func addButtonToNavigationBar(){
+    guard let film = self.film else { return }
+    if DataManager.instance.indexOf(film: film) < 0{
+      let barButton = UIBarButtonItem(image: #imageLiteral(resourceName: "bookmark"), style: .plain, target: self, action: #selector(addToFavourites))
+      barButton.tintColor = #colorLiteral(red: 0.9843137255, green: 0.5490196078, blue: 0, alpha: 1)
+      self.navigationItem.rightBarButtonItem = barButton
+    } else {
+      return
+    }
   }
   
   //MARK: - Action handlers
