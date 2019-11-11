@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrailerViewController" customModule="MoviesDB" customModuleProvider="target">
+            <connections>
+                <outlet property="ibActivityIndicator" destination="4tu-Fd-tCF" id="Se2-8R-BGN"/>
+                <outlet property="ibTrailerPlayerView" destination="vd3-gd-7La" id="2hS-Ei-anx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vd3-gd-7La" customClass="WKYTPlayerView">
+                    <rect key="frame" x="0.0" y="240" width="375" height="187.5"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vd3-gd-7La" secondAttribute="height" multiplier="2:1" id="L44-cB-UV6"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="4tu-Fd-tCF">
+                    <rect key="frame" x="169" y="315" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vd3-gd-7La" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="7MO-ws-gAT"/>
+                <constraint firstItem="4tu-Fd-tCF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="GeC-gC-PhL"/>
+                <constraint firstItem="vd3-gd-7La" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PlV-gk-dkk"/>
+                <constraint firstItem="4tu-Fd-tCF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UJw-eR-qRB"/>
+                <constraint firstItem="vd3-gd-7La" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Zgk-U3-sSg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-234.40000000000001" y="9.4452773613193415"/>
+        </view>
+    </objects>
+</document>

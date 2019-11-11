@@ -34,8 +34,8 @@
 		973449130AB4B9A2CCA90EDC /* Pods_MoviesDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCE745FE95A40F2D5BA5BEC /* Pods_MoviesDB.framework */; };
 		EA05BC86236F5EF500BB19AD /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA05BC84236F5EF400BB19AD /* DetailsViewController.xib */; };
 		EA05BC8A236F602D00BB19AD /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA05BC89236F602D00BB19AD /* DetailsViewController.swift */; };
-		EAA3307A237828CE00A4FB4F /* TrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA33078237828CE00A4FB4F /* TrailerViewController.swift */; };
-		EAA3307B237828CE00A4FB4F /* TrailerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA33079237828CE00A4FB4F /* TrailerViewController.xib */; };
+		EA5EAE88237A0B5100EA8180 /* TrailerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA5EAE86237A0B5100EA8180 /* TrailerViewController.xib */; };
+		EA5EAE89237A0B5100EA8180 /* TrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5EAE87237A0B5100EA8180 /* TrailerViewController.swift */; };
 		EAA3307F23782A7C00A4FB4F /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3307E23782A7C00A4FB4F /* Errors.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,8 +70,8 @@
 		BFE31787B8840BE730B01FDE /* Pods-MoviesDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesDB.debug.xcconfig"; path = "Target Support Files/Pods-MoviesDB/Pods-MoviesDB.debug.xcconfig"; sourceTree = "<group>"; };
 		EA05BC84236F5EF400BB19AD /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		EA05BC89236F602D00BB19AD /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		EAA33078237828CE00A4FB4F /* TrailerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrailerViewController.swift; path = ../../../../../../Desktop/TrailerViewController.swift; sourceTree = "<group>"; };
-		EAA33079237828CE00A4FB4F /* TrailerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TrailerViewController.xib; path = ../../../../../../Desktop/TrailerViewController.xib; sourceTree = "<group>"; };
+		EA5EAE86237A0B5100EA8180 /* TrailerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrailerViewController.xib; sourceTree = "<group>"; };
+		EA5EAE87237A0B5100EA8180 /* TrailerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailerViewController.swift; sourceTree = "<group>"; };
 		EAA3307E23782A7C00A4FB4F /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		EFCE745FE95A40F2D5BA5BEC /* Pods_MoviesDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviesDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -242,8 +242,8 @@
 		EAA33077237828B000A4FB4F /* TrailerViewController */ = {
 			isa = PBXGroup;
 			children = (
-				EAA33078237828CE00A4FB4F /* TrailerViewController.swift */,
-				EAA33079237828CE00A4FB4F /* TrailerViewController.xib */,
+				EA5EAE87237A0B5100EA8180 /* TrailerViewController.swift */,
+				EA5EAE86237A0B5100EA8180 /* TrailerViewController.xib */,
 			);
 			path = TrailerViewController;
 			sourceTree = "<group>";
@@ -312,7 +312,7 @@
 				3F87D197230FE0EE0093D8ED /* LaunchScreen.storyboard in Resources */,
 				3F8FCE0923154FC700D814F5 /* SplashViewController.xib in Resources */,
 				3F87D1BD230FF85C0093D8ED /* MovieTableViewCell.xib in Resources */,
-				EAA3307B237828CE00A4FB4F /* TrailerViewController.xib in Resources */,
+				EA5EAE88237A0B5100EA8180 /* TrailerViewController.xib in Resources */,
 				3F87D194230FE0EE0093D8ED /* Assets.xcassets in Resources */,
 				3F87D1A5230FE60B0093D8ED /* MovieDBViewController.xib in Resources */,
 				3F5AA2A223157AD3007A110B /* Main.storyboard in Resources */,
@@ -370,13 +370,13 @@
 			files = (
 				3F8FCDFF23154CA900D814F5 /* NetworkManager.swift in Sources */,
 				3FB5A66F23151F3600DD4F9D /* String+extension.swift in Sources */,
+				EA5EAE89237A0B5100EA8180 /* TrailerViewController.swift in Sources */,
 				3F8FCE0523154E6C00D814F5 /* SplashScreenDelegate.swift in Sources */,
 				3F87D18D230FE0ED0093D8ED /* AppDelegate.swift in Sources */,
 				3F8FCE0C2315526500D814F5 /* ListType.swift in Sources */,
 				3F87D1C62310113B0093D8ED /* FavouritesViewControllerDelegate.swift in Sources */,
 				3F87D1CA2310179F0093D8ED /* UIButton+extension.swift in Sources */,
 				3F87D1C1230FFD3D0093D8ED /* DataManager.swift in Sources */,
-				EAA3307A237828CE00A4FB4F /* TrailerViewController.swift in Sources */,
 				3F87D1A9230FE7480093D8ED /* TabBarViewController.swift in Sources */,
 				3F87D1B6230FED250093D8ED /* UINavigationBar+extension.swift in Sources */,
 				3FB5A66D23151D7600DD4F9D /* Genre.swift in Sources */,
