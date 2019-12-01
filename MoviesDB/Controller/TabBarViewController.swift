@@ -29,7 +29,7 @@ class TabBarViewController: UITabBarController {
     self.tabBar.isTranslucent = false
     self.tabBar.tintColor = #colorLiteral(red: 0.9843137255, green: 0.5490196078, blue: 0, alpha: 1)
     
-    self.viewControllers = [moviesVC]
+    self.viewControllers = [moviesVC, favouritesVC]
   }
   
 }

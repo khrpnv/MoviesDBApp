@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol FavouritesViewControllerDelegate: class {
+protocol FavouritesControllerDelegate: class {
     func didAddFilm()
 }

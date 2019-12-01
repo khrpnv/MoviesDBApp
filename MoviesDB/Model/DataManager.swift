@@ -25,7 +25,7 @@ final class DataManager{
   private var upcomingPageCounter: Int = 2
   
   //MARK: - Delegates
-  private weak var favouritesControllerDelegate: FavouritesViewControllerDelegate?
+  private weak var favouritesControllerDelegate: FavouritesControllerDelegate?
   private init(){}
   
   //MARK: - Setters
@@ -68,7 +68,7 @@ final class DataManager{
     favourites = array
   }
   
-  func setFavouritesControllerDelegate(delegate: FavouritesViewControllerDelegate){
+  func setFavouritesControllerDelegate(delegate: FavouritesControllerDelegate){
     favouritesControllerDelegate = delegate
   }
   
@@ -80,6 +80,18 @@ final class DataManager{
       topRatedPageCounter += 1
     case .upcoming:
       upcomingPageCounter += 1
+    }
+  }
+  
+  func initGenresArray(array: [Genre]){
+    let genresFromDB = DatabaseManager.instance.getGenres()
+    if genresFromDB.count == 0{
+      for genre in array{
+        DatabaseManager.instance.addGenre(genre: genre)
+        genres.append(genre)
+      }
+    } else {
+      genres = genresFromDB
     }
   }
   
@@ -131,6 +143,25 @@ final class DataManager{
       }
     }
     return ""
+  }
+  
+  //MARK: - Funcs to control favourites list
+  func addFilm(movie film: Film){
+    if indexOf(film: film) < 0{
+      favourites.append(film)
+      DatabaseManager.instance.addFilm(film: film)
+      favouritesControllerDelegate?.didAddFilm()
+    }
+  }
+  
+  func removeFilm(movie film: Film){
+    let index = indexOf(film: film)
+    if index >= 0{
+      favourites.remove(at: index)
+      DatabaseManager.instance.removeFilm(film: film)
+    } else {
+      return
+    }
   }
   
   //MARK: - Random film generator

@@ -50,22 +50,19 @@ class DetailsViewController: UIViewController {
     ibLabelParentView.layer.borderWidth = 1
     ibLabelParentView.layer.borderColor = UIColor(red: 251/255, green: 140/255, blue: 0, alpha: 1).cgColor
     ibBlurView.backgroundColor = .clear
-//    if getFilmGenreName().count == 0 {
-//      ibTrailerButton.isHidden = true
-//    }
   }
   
   private func getFilmData(){
     ibFilmNameLabel.text = film?.name
     ibReleaseDateLabel.text = film?.releaseDate
-    ibGenreNameLabel.text = "Genre"
+    ibGenreNameLabel.text = getFilmGenreName()
     let voteAvarage = film!.voteAverage
     ibFilmRateLabel.text = String(voteAvarage)
     ibFilmOverview.text = film?.overview
     ibFilmPosterView.sd_setImage(with: film?.imageURL, completed: nil)
   }
   
-  private func getFilmGenreName() -> String {
+  private func getFilmGenreName() -> String{
     var genresString = ""
     for genreId in film?.genresId ?? []{
       genresString += DataManager.instance.getGenreName(by: genreId) + "/"
@@ -129,6 +126,8 @@ extension DetailsViewController{
 //MARK: - Bar button Handler
 extension DetailsViewController{
   @objc func addToFavourites(sender: UIBarButtonItem){
-    // TODO:
+    guard let currentFilm = film else { return }
+    DataManager.instance.addFilm(movie: currentFilm)
+    self.navigationItem.rightBarButtonItem = nil
   }
 }

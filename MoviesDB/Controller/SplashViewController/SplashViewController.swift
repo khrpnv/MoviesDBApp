@@ -16,6 +16,11 @@ class SplashViewController: UIViewController {
     super.viewDidLoad()
     let networkManager = NetworkManager()
     networkManager.splashScreenDelegate = self
+    if DatabaseManager.instance.getGenres().count == 0{
+        networkManager.getGenresData()
+    } else {
+        DataManager.instance.initGenresArray(array: [])
+    }
     networkManager.getFilmData(requsetString: "popular", listType: .popular, isInitial: true, page: 1)
     networkManager.getFilmData(requsetString: "top_rated", listType: .topRated, isInitial: true, page: 1)
     networkManager.getFilmData(requsetString: "upcoming", listType: .upcoming, isInitial: true, page: 1)
@@ -25,6 +30,7 @@ class SplashViewController: UIViewController {
 //MARK: - SplashScreenDelegate
 extension SplashViewController: SplashScreenDelegate{
   func didFinishDownloadingGenres(array: [Genre]) {
+    DataManager.instance.initGenresArray(array: array)
   }
   
   func didFinishDownloadingData(array: [Film], list: ListType) {
