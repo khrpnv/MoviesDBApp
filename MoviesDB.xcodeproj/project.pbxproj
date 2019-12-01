@@ -36,6 +36,8 @@
 		EA05BC8A236F602D00BB19AD /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA05BC89236F602D00BB19AD /* DetailsViewController.swift */; };
 		EA5EAE88237A0B5100EA8180 /* TrailerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA5EAE86237A0B5100EA8180 /* TrailerViewController.xib */; };
 		EA5EAE89237A0B5100EA8180 /* TrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5EAE87237A0B5100EA8180 /* TrailerViewController.swift */; };
+		EA62046523946CB4004920DC /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA62046323946CB4004920DC /* FavouritesViewController.xib */; };
+		EA62046623946CB4004920DC /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA62046423946CB4004920DC /* FavouritesViewController.swift */; };
 		EAA3307F23782A7C00A4FB4F /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3307E23782A7C00A4FB4F /* Errors.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,8 @@
 		EA05BC89236F602D00BB19AD /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		EA5EAE86237A0B5100EA8180 /* TrailerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrailerViewController.xib; sourceTree = "<group>"; };
 		EA5EAE87237A0B5100EA8180 /* TrailerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailerViewController.swift; sourceTree = "<group>"; };
+		EA62046323946CB4004920DC /* FavouritesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FavouritesViewController.xib; path = "../../../../../../Desktop/MoviesDB-master/MoviesDB/Controller/FavouritesViewController/FavouritesViewController.xib"; sourceTree = "<group>"; };
+		EA62046423946CB4004920DC /* FavouritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavouritesViewController.swift; path = "../../../../../../Desktop/MoviesDB-master/MoviesDB/Controller/FavouritesViewController/FavouritesViewController.swift"; sourceTree = "<group>"; };
 		EAA3307E23782A7C00A4FB4F /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		EFCE745FE95A40F2D5BA5BEC /* Pods_MoviesDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviesDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				3F87D1A8230FE7480093D8ED /* TabBarViewController.swift */,
+				EA62046223946C98004920DC /* FavouritesViewController */,
 				EA05BC88236F5EFF00BB19AD /* DetailsViewController */,
 				3F87D1A6230FE6120093D8ED /* MovieDBViewController */,
 				3F8FCE0A23154FCF00D814F5 /* SplashViewController */,
@@ -239,6 +244,15 @@
 			path = DetailsViewController;
 			sourceTree = "<group>";
 		};
+		EA62046223946C98004920DC /* FavouritesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EA62046423946CB4004920DC /* FavouritesViewController.swift */,
+				EA62046323946CB4004920DC /* FavouritesViewController.xib */,
+			);
+			path = FavouritesViewController;
+			sourceTree = "<group>";
+		};
 		EAA33077237828B000A4FB4F /* TrailerViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +330,7 @@
 				3F87D194230FE0EE0093D8ED /* Assets.xcassets in Resources */,
 				3F87D1A5230FE60B0093D8ED /* MovieDBViewController.xib in Resources */,
 				3F5AA2A223157AD3007A110B /* Main.storyboard in Resources */,
+				EA62046523946CB4004920DC /* FavouritesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +397,7 @@
 				3FB5A66D23151D7600DD4F9D /* Genre.swift in Sources */,
 				3F051DA62317E31100DFBA9F /* TrailerControllerDelegate.swift in Sources */,
 				EAA3307F23782A7C00A4FB4F /* Errors.swift in Sources */,
+				EA62046623946CB4004920DC /* FavouritesViewController.swift in Sources */,
 				3F87D1A4230FE60B0093D8ED /* MovieDBViewController.swift in Sources */,
 				EA05BC8A236F602D00BB19AD /* DetailsViewController.swift in Sources */,
 				3FC642832317AF380003D3C7 /* MoviesControllerDelegate.swift in Sources */,
