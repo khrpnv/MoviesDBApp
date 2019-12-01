@@ -8,6 +8,7 @@
 
 import UIKit
 import PopupDialog
+import Toast_Swift
 
 class MovieDBViewController: UIViewController {
   
@@ -73,6 +74,15 @@ class MovieDBViewController: UIViewController {
   
   private func setupDataSource(movies: [Film]){
     dataSource = movies
+  }
+  
+  private func showToast() {
+    var style = ToastStyle()
+    style.messageColor = .white
+    style.backgroundColor = .black
+    style.messageAlignment = .center
+    self.view.makeToast("Movie has been added to your favourites list.", duration: 3.0, position: .bottom, style: style)
+    ToastManager.shared.isTapToDismissEnabled = true
   }
   
   //MARK: - Search funcs
@@ -164,11 +174,12 @@ extension MovieDBViewController: UITableViewDelegate, UITableViewDataSource{
   }
   
   func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-    let addFilmAction = UITableViewRowAction(style: .normal, title: "Add") { [weak self](action, indexPath) in
+    let addFilmAction = UITableViewRowAction(style: .normal, title: "Add") { [weak self] (action, indexPath) in
       guard let film = self?.getFilm(for: indexPath) else {
         fatalError("Erro: no such film")
       }
       DataManager.instance.addFilm(movie: film)
+      self?.showToast()
       tableView.reloadRows(at: [indexPath], with: .none)
     }
     addFilmAction.backgroundColor = #colorLiteral(red: 0.9843137255, green: 0.5490196078, blue: 0, alpha: 1)

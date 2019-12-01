@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class DetailsViewController: UIViewController {
   //MARK: - Variables
@@ -50,6 +51,15 @@ class DetailsViewController: UIViewController {
     ibLabelParentView.layer.borderWidth = 1
     ibLabelParentView.layer.borderColor = UIColor(red: 251/255, green: 140/255, blue: 0, alpha: 1).cgColor
     ibBlurView.backgroundColor = .clear
+  }
+  
+  private func showToast() {
+    var style = ToastStyle()
+    style.messageColor = .white
+    style.backgroundColor = .black
+    style.messageAlignment = .center
+    self.view.makeToast("Movie has been added to your favourites list.", duration: 3.0, position: .bottom, style: style)
+    ToastManager.shared.isTapToDismissEnabled = true
   }
   
   private func getFilmData(){
@@ -128,6 +138,7 @@ extension DetailsViewController{
   @objc func addToFavourites(sender: UIBarButtonItem){
     guard let currentFilm = film else { return }
     DataManager.instance.addFilm(movie: currentFilm)
+    showToast()
     self.navigationItem.rightBarButtonItem = nil
   }
 }

@@ -13,4 +13,5 @@ target 'MoviesDB' do
   pod 'Koloda'
   pod "YoutubePlayer-in-WKWebView"
   pod 'PopupDialog'
+  pod 'Toast-Swift'
 end
