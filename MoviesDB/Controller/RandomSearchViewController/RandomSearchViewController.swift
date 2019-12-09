@@ -11,4 +11,5 @@ import SDWebImage
 import Koloda
 
 class RandomSearchViewController: UIViewController {
+
 }

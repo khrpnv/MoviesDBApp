@@ -42,6 +42,8 @@
 		EAA3307F23782A7C00A4FB4F /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3307E23782A7C00A4FB4F /* Errors.swift */; };
 		EAC28342239EE6E800B1BE34 /* RandomSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC28340239EE6E800B1BE34 /* RandomSearchViewController.xib */; };
 		EAC28343239EE6E800B1BE34 /* RandomSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC28341239EE6E800B1BE34 /* RandomSearchViewController.swift */; };
+		EAC28347239EE94200B1BE34 /* CustomCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC28345239EE94200B1BE34 /* CustomCardView.xib */; };
+		EAC28348239EE94200B1BE34 /* CustomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC28346239EE94200B1BE34 /* CustomCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +85,8 @@
 		EAA3307E23782A7C00A4FB4F /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		EAC28340239EE6E800B1BE34 /* RandomSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RandomSearchViewController.xib; sourceTree = "<group>"; };
 		EAC28341239EE6E800B1BE34 /* RandomSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomSearchViewController.swift; sourceTree = "<group>"; };
+		EAC28345239EE94200B1BE34 /* CustomCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCardView.xib; sourceTree = "<group>"; };
+		EAC28346239EE94200B1BE34 /* CustomCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCardView.swift; sourceTree = "<group>"; };
 		EFCE745FE95A40F2D5BA5BEC /* Pods_MoviesDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviesDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -146,6 +150,7 @@
 		3F87D19F230FE5AB0093D8ED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EAC28344239EE91900B1BE34 /* CustomCardView */,
 				3F87D1B9230FF8140093D8ED /* MovieTableViewCell */,
 			);
 			path = View;
@@ -279,6 +284,15 @@
 			path = RandomSearchViewController;
 			sourceTree = "<group>";
 		};
+		EAC28344239EE91900B1BE34 /* CustomCardView */ = {
+			isa = PBXGroup;
+			children = (
+				EAC28346239EE94200B1BE34 /* CustomCardView.swift */,
+				EAC28345239EE94200B1BE34 /* CustomCardView.xib */,
+			);
+			path = CustomCardView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -343,6 +357,7 @@
 				3F87D197230FE0EE0093D8ED /* LaunchScreen.storyboard in Resources */,
 				3F8FCE0923154FC700D814F5 /* SplashViewController.xib in Resources */,
 				3F87D1BD230FF85C0093D8ED /* MovieTableViewCell.xib in Resources */,
+				EAC28347239EE94200B1BE34 /* CustomCardView.xib in Resources */,
 				EA5EAE88237A0B5100EA8180 /* TrailerViewController.xib in Resources */,
 				EAC28342239EE6E800B1BE34 /* RandomSearchViewController.xib in Resources */,
 				3F87D194230FE0EE0093D8ED /* Assets.xcassets in Resources */,
@@ -413,6 +428,7 @@
 				3F87D1C1230FFD3D0093D8ED /* DataManager.swift in Sources */,
 				3F87D1A9230FE7480093D8ED /* TabBarViewController.swift in Sources */,
 				3F87D1B6230FED250093D8ED /* UINavigationBar+extension.swift in Sources */,
+				EAC28348239EE94200B1BE34 /* CustomCardView.swift in Sources */,
 				3FB5A66D23151D7600DD4F9D /* Genre.swift in Sources */,
 				EA73F6C92394733700ABD800 /* FavouritesViewController.swift in Sources */,
 				3F051DA62317E31100DFBA9F /* TrailerControllerDelegate.swift in Sources */,
