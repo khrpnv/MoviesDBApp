@@ -22,8 +22,13 @@ class TabBarViewController: UITabBarController {
     
     let favouritesVC = UINavigationController(rootViewController: FavouritesViewController(nibName: "FavouritesViewController", bundle: nil))
     favouritesVC.title = "Favourites"
-    favouritesVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+    favouritesVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
     favouritesVC.modalPresentationStyle = .fullScreen
+    
+    let randomSearchVC = UINavigationController(rootViewController: RandomSearchViewController(nibName: "RandomSearchViewController", bundle: nil))
+    randomSearchVC.title = "Random"
+    randomSearchVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
+    randomSearchVC.modalPresentationStyle = .fullScreen
     
     self.tabBar.barStyle = .black
     self.tabBar.isTranslucent = false

@@ -40,6 +40,8 @@
 		EA73F6C92394733700ABD800 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73F6C72394733700ABD800 /* FavouritesViewController.swift */; };
 		EA73F6CA2394733700ABD800 /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA73F6C82394733700ABD800 /* FavouritesViewController.xib */; };
 		EAA3307F23782A7C00A4FB4F /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3307E23782A7C00A4FB4F /* Errors.swift */; };
+		EAC28342239EE6E800B1BE34 /* RandomSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC28340239EE6E800B1BE34 /* RandomSearchViewController.xib */; };
+		EAC28343239EE6E800B1BE34 /* RandomSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC28341239EE6E800B1BE34 /* RandomSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,8 @@
 		EA73F6C72394733700ABD800 /* FavouritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		EA73F6C82394733700ABD800 /* FavouritesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavouritesViewController.xib; sourceTree = "<group>"; };
 		EAA3307E23782A7C00A4FB4F /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		EAC28340239EE6E800B1BE34 /* RandomSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RandomSearchViewController.xib; sourceTree = "<group>"; };
+		EAC28341239EE6E800B1BE34 /* RandomSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomSearchViewController.swift; sourceTree = "<group>"; };
 		EFCE745FE95A40F2D5BA5BEC /* Pods_MoviesDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviesDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				3F87D1A8230FE7480093D8ED /* TabBarViewController.swift */,
+				EAC2833F239EE64C00B1BE34 /* RandomSearchViewController */,
 				EA62046223946C98004920DC /* FavouritesViewController */,
 				EA05BC88236F5EFF00BB19AD /* DetailsViewController */,
 				3F87D1A6230FE6120093D8ED /* MovieDBViewController */,
@@ -265,6 +270,15 @@
 			path = TrailerViewController;
 			sourceTree = "<group>";
 		};
+		EAC2833F239EE64C00B1BE34 /* RandomSearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EAC28341239EE6E800B1BE34 /* RandomSearchViewController.swift */,
+				EAC28340239EE6E800B1BE34 /* RandomSearchViewController.xib */,
+			);
+			path = RandomSearchViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -330,6 +344,7 @@
 				3F8FCE0923154FC700D814F5 /* SplashViewController.xib in Resources */,
 				3F87D1BD230FF85C0093D8ED /* MovieTableViewCell.xib in Resources */,
 				EA5EAE88237A0B5100EA8180 /* TrailerViewController.xib in Resources */,
+				EAC28342239EE6E800B1BE34 /* RandomSearchViewController.xib in Resources */,
 				3F87D194230FE0EE0093D8ED /* Assets.xcassets in Resources */,
 				3F87D1A5230FE60B0093D8ED /* MovieDBViewController.xib in Resources */,
 				3F5AA2A223157AD3007A110B /* Main.storyboard in Resources */,
@@ -404,6 +419,7 @@
 				EAA3307F23782A7C00A4FB4F /* Errors.swift in Sources */,
 				3F87D1A4230FE60B0093D8ED /* MovieDBViewController.swift in Sources */,
 				EA05BC8A236F602D00BB19AD /* DetailsViewController.swift in Sources */,
+				EAC28343239EE6E800B1BE34 /* RandomSearchViewController.swift in Sources */,
 				3FC642832317AF380003D3C7 /* MoviesControllerDelegate.swift in Sources */,
 				3F87D1BC230FF85C0093D8ED /* MovieTableViewCell.swift in Sources */,
 				3FB5A67123151F5D00DD4F9D /* UIImage+extension.swift in Sources */,

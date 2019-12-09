@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiscoverViewController" customModule="MoviesDB" customModuleProvider="target">
+            <connections>
+                <outlet property="ibAddButton" destination="vaN-OW-8W2" id="kTr-dd-8S1"/>
+                <outlet property="ibIgnoreButton" destination="bOG-gq-enu" id="clj-fc-yZV"/>
+                <outlet property="kolodaView" destination="Huy-cY-Ddi" id="DTa-5Y-2hW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="QWJ-dC-LAT">
+                    <rect key="frame" x="132" y="486.5" width="150" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOG-gq-enu">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="Ad0-mj-l8o"/>
+                                <constraint firstAttribute="width" secondItem="bOG-gq-enu" secondAttribute="height" multiplier="1:1" id="Zav-Tg-xPX"/>
+                            </constraints>
+                            <state key="normal" image="noButton">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="ignoreButtonPressed:" destination="-1" eventType="touchUpInside" id="Xuj-Ia-Klu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaN-OW-8W2">
+                            <rect key="frame" x="90" y="0.0" width="60" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="yesButton">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="-1" eventType="touchUpInside" id="sWf-NF-Z72"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="vaN-OW-8W2" firstAttribute="height" secondItem="bOG-gq-enu" secondAttribute="height" id="ApW-kX-CRQ"/>
+                        <constraint firstItem="vaN-OW-8W2" firstAttribute="width" secondItem="bOG-gq-enu" secondAttribute="width" id="kpX-0c-q7Z"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Huy-cY-Ddi" customClass="KolodaView" customModule="Koloda">
+                    <rect key="frame" x="20.5" y="94" width="373" height="372.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Huy-cY-Ddi" secondAttribute="height" multiplier="1:1" id="JZe-FA-XM2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="QWJ-dC-LAT" firstAttribute="top" secondItem="Huy-cY-Ddi" secondAttribute="bottom" constant="20" id="9NQ-Dm-foU"/>
+                <constraint firstItem="QWJ-dC-LAT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9wT-6E-vrz"/>
+                <constraint firstItem="Huy-cY-Ddi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="bFv-Cn-dax"/>
+                <constraint firstItem="Huy-cY-Ddi" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.9" id="jD7-Qt-VCF"/>
+                <constraint firstItem="Huy-cY-Ddi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="y8p-qW-qNN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-387" y="-8"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="noButton" width="80" height="80"/>
+        <image name="yesButton" width="80" height="80"/>
+    </resources>
+</document>
