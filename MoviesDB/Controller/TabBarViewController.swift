@@ -26,8 +26,9 @@ class TabBarViewController: UITabBarController {
     favouritesVC.modalPresentationStyle = .fullScreen
     
     let randomSearchVC = UINavigationController(rootViewController: RandomSearchViewController(nibName: "RandomSearchViewController", bundle: nil))
+    let image = UIImage(named: "random")
     randomSearchVC.title = "Random"
-    randomSearchVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
+    randomSearchVC.tabBarItem = UITabBarItem(title: "Random", image: image, tag: 1)
     randomSearchVC.modalPresentationStyle = .fullScreen
     
     self.tabBar.barStyle = .black
